@@ -4,11 +4,11 @@ let ScrollableMixin = {
   },
 
   scrollTo(destY?: number, destX?: number) {
-    this.getScrollResponder().scrollTo(destY, destX);
+    this.getScrollResponder().scrollTo({y: destY, x: destX});
   },
 
   scrollWithoutAnimationTo(destY?: number, destX?: number) {
-    this.getScrollResponder().scrollWithoutAnimationTo(destY, destX);
+    this.getScrollResponder().scrollWithoutAnimationTo({y: destY, x: destX});
   },
 };
 
